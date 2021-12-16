@@ -1,0 +1,105 @@
+
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{geometry}
+\geometry{a4paper}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{csquotes}
+\usepackage{epigraph}
+\usepackage{multicol}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pythonhighlight}
+
+\begin{document}
+\author{\textbf{Fractals Community}}
+\title{\textsc{Fractulum Mathathon}}
+\maketitle
+
+\epigraph{God made the natural numbers; all else is the work of man.}{Leopold Kronecker}
+
+\begin{enumerate}
+    \item
+Given two integers, define an operation $*$ such that if $a$ and $b$ are integers, then $a*b$ is an integer.
+The operation $*$ has the following properties:
+\begin{itemize}
+    \item $a*a = 0$ for all integers $a$;
+    \item $(ka+b)*a = b* a$ for all integers $a$, $b$, and $k$;
+    \item $0 \leq b*a < a$.
+    \item $0 \leq b < a$ then $b*a = b$.
+\end{itemize}
+Find $2021 * 16$
+
+
+
+\item It’s currently $6:00$ on a $12$ hour clock. What time will be shown on the clock $100$ hours from
+now? Express your answer in the form $hh : mm$.
+
+
+\item We call a positive integer \textit{binary-okay} if at least half of the digits in its binary (base 2) representation are 1’s, but no two 1s are consecutive. For example, $10_{10} = 1010_2$ and $5_{10} = 101_2$
+are both binary-okay, but $16_{10} = {10000}_2$ and $11_{10} = {1011}_2$ are not. Compute the number of
+binary-okay positive integers less than or equal to $2021$ (in base $10$).
+
+
+\item Let $n$ be an integer such that $n^4 -2n^3 -n^2 +2n + 2$ is a prime number. What's the sum
+of all possible $n$?
+
+
+\item Find the number of subsets $S$ of $\{1,2,...,10\}$ such that no two of the elements in $S$ are consecutive
+
+\item Can an $8\times8$ board be coverd by $15$ $1\times4$ rectangles and only one $2\times2$ square without overlaping? prove your answer.
+
+
+\newpage
+\item A $3  \times 3$ magic square is a grid of distinct numbers whose rows, columns, and diagonals
+all add to the same integer sum. Connie creates a magic square whose sum is $N$, but her
+keyboard is broken so that when she types a number, one of the digits ($0 - 9$) always appears
+as a different digit (e.g. if the digit $8$ always appears as $5$, the number $18$ will appear as $15$).
+The altered square is shown below. Find $N$.
+
+\begin{table}[h]
+    \begin{center}
+
+\begin{tabular}{|l|l|l|}
+\hline
+9  & 11 & 10 \\ \hline
+18 & 17 & 6  \\ \hline
+14 & 11 & 15 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\item Compute
+$$\sum_{k \ge 0} {1000 \choose 3k}$$
+\end{enumerate}
+
+% \begin{center}
+%     End of Probems
+% \end{center}
+\leavevmode
+$\pi \pi \pi   \pi\pi \pi \pi \pi \pi \pi\pi \pi
+\pi \pi \pi \pi \pi \pi\pi \pi \pi \pi \pi \pi\pi \pi \pi \pi \pi
+$ End of Problems
+$\pi \pi \pi   \pi\pi \pi \pi \pi \pi \pi\pi \pi
+\pi \pi \pi \pi \pi \pi\pi \pi \pi \pi \pi \pi\pi \pi \pi \pi \pi$
+\newline
+\leavevmode
+\newline
+\newline
+\newline
+\newline
+\newline
+% \newline
+\begin{python}
+>>> from engineering.math import pi, e
+>>> pi == e
+True
+\end{python}
+\end{document}
